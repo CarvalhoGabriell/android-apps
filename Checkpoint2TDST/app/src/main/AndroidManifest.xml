@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.fiap.checkpoint_2tdst">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mike"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mike"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Checkpoint2TDST">
+        <activity android:name=".ResultadoContaTelefonicaActivity"
+            android:parentActivityName=".TelefoneActivity"/>
+        <activity
+            android:name=".TelefoneActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CalculadoraActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
